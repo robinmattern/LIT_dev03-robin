@@ -1,0 +1,26 @@
+    1.  <div    class="Header"
+   13.  <div    class="MenuWrap"
+        <input  class="Toggler"
+   12.  <td     class="Logo"
+   12.  <div    class="Logo"
+    2.  <span   class="LogoText"
+    2.  <span   class="LogoText"
+        <span   class="device-text"
+   14.  <div    class="HeaderSpacer"
+        <div    class="new-div"
+        <tbody  class="HeaderNavList"
+    3.    <span class="DeviceText"
+        <td     class="HeaderSpacer"
+    7.  <td     class="HeaderNavListItemBack"
+    8.  <td     class="HeaderNavListItemHome"
+    9.  <td     class="HeaderNavListItemMtgLoc"
+    4.  <td     class="HeaderNavListItemCTA"
+    5.  <span   class="NextTag"
+    6.  <span   class="next-meeting-date"
+   10.  <td     class="HeaderNavListItemAvatar"
+   11.  <img    class="AvatarImage"
+        <img    class="PencilImage"
+
+
+
+

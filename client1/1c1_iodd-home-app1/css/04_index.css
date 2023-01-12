@@ -4,28 +4,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');   /* .(21211.05.4) */
 
 
-/*-----------------------------------------
-:root selector for variables
--------------------------------------------*/
-:root {
-    --GlobalFontFamily: "Arial, Helvetica, sans-serif";
-    --HeaderFooterBGColor: rgb(198 210 222);
-    --NextMeetingDate: "02/09/2023";    
-    --GlobalMaxWidth: 900px;
-    
-    --CalloutIconCheck: "\f14a  \A"; /*checkbox*/
-    --CalloutIconCheck: "\f0da  \A"; /*Right Arrow*/
-    --CalloutIconCheck: "\f0a4  \A"; /*Right Hand Pointer*/
-    --CalloutIconCheck: "\f105  \A"; /*Right Arrow*/
-    --CalloutIconCheck: "\f328  \A"; /*Clip Board*/
-    --CalloutIconCheck: "\f0ca  \A"; /*Bullets {<li>}*/
-    --CalloutIconCheck: "\f064  \A"; /*Forward Arrow*/
-    --CalloutIconCheck: "\f0ae  \A"; /*ToDo List*/
-    --CalloutIconCheck: "\f35a  \A"; /*Right Arrow in Circles*/
-
-    --CalloutIconFontFamily: "Font Awesome 5 Free";    
-
-} 
 /*------------------------------------------*/
 * {                   /* reset all style */
     box-sizing          :  border-box;
@@ -48,101 +26,11 @@ body {
     max-height: 99%;
   } 
 
-
 /*Next meeting date*/
+/*Change date in 00_global_variables.css*/
 .next-meeting-date::after {
-  content: var(--NextMeetingDate);
-    }
-/*-----------------------------------------
-The .Header properites
-------------------------------------------*/
-.Header {
-    background: var(--HeaderFooterBGColor);
-    border-bottom: 0px #000 solid;
-    width: 100%;
-    height: 70px;
-    position: fixed;  /*was relative*/
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: var(--GlobalMaxWidth);
-    margin: auto;
+    content: var(--NextMeetingDate);
   }
-
-/*------------------------------------------*/
-.HeaderSpacer {
-      flex: 1;
-  }
-/* Header END^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-  
-/*-----------------------------------------
-The .HeaderNavList (horizontal menu) properites
-------------------------------------------*/
-.HeaderNavList {
-    list-style: none;
-    margin-right: 30px;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 20px;
-    font-family: "Arial, Helvetica, sans-serif";
-}
-/*------------------------------------------*/
-.HeaderNavListItem1 a, 
-.HeaderNavListItem2 a{
-    color: black;
-    font-weight: bold;
-    font-family: "Arial, Helvetica, sans-serif";
-    text-decoration: none;
-    margin: 8px 0;
-    padding: 25px;
-}
-/*------------------------------------------*/
-.HeaderNavListItem a:hover,
-.HeaderNavListItem a:active {
-    color: blue;
-}
-/*------------------------------------------*/
-.HeaderNavListItemCTA a {
-    color: white;
-    background: blue ;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-family: "Arial, Helvetica, sans-serif";
-}
-/*------------------------------------------*/
-.HeaderNavListItemCTA {
-    animation     : wiggle 400ms 2s 8 ease-out none;
-    }
-  
-/*-----------------------------------------
-The @keyframes wiggle properties
-------------------------------------------*/
-  @keyframes wiggle {
-      0% { transform: rotateZ(  0deg ); }
-     50% { transform: rotateZ(-10deg ); }
-    100% { transform: rotateZ( 10deg ); }
-  }
-/*------------------------------------------*/
-.HeaderNavListItemCTA a:hover,
-.HeaderNavListItemCTA a:active {
-    color: blue;
-    color: #C0C0C0;
-}
-
-/* Header Nav END ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-  
-.Logo {
-  padding: 0px 0px 10px 10px;
-}
-#Btn1 {                                                    
-  background-color: var(--HeaderFooterBGColor);          /* .(30104.01.2 RAM Hide it; Hack) */  
-  }
-/* Logo END ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-
 
 /*-----------------------------------------
 The .Section1 properites
@@ -155,19 +43,20 @@ The .Section1 properites
   background-position: center;
   border-bottom: 0px black solid;
   width: 100%;
-  height: 35%;
+  height: 250px;
   position: relative;
   top: 70px;
   overflow: auto;
 }
 /*------------------------------------------*/
 .Section1Title {
-    font-size: 40px;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 1px 1px 3px #000000;
-    text-align: left; 
-    padding-left: 25px; 
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-shadow: 1px 1px 3px white;
+  text-align: left; 
+  padding-left: 25px; 
   }
 /*------------------------------------------*/
 .Section1Title::first-letter {
@@ -177,12 +66,12 @@ The .Section1 properites
 /*------------------------------------------*/
 .Section1Paragraph {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: black;
   font-weight: 300;
   margin: 20px 20px 0px 40px;
   font-size: 22px;
   font-weight: 600;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px white;
   text-align: left !important;
 }
 /* Section-1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -336,12 +225,14 @@ The .Section2 properites
 /*-----------------------------------------
 The .Footer properites
 ------------------------------------------*/
+
+/*DELETE after 1/15/23  this is done in Footer.css
+
 .Footer {
   background: rgb(175 170 150);
   background: var(--HeaderFooterBGColor);
   width: 100%;
-  height: 75px; 
-  /*top: 10%;  /*Removed in place of the bottom property*/
+  height: 70px; 
   border-top: 0px solid darkgray;
   bottom: 0;
   position: fixed;
@@ -349,7 +240,6 @@ The .Footer properites
   max-width: var(--GlobalMaxWidth);
   margin: auto;
 } 
-/*------------------------------------------*/
 .FooterNavList {
     list-style: none;
     margin: 20px;
@@ -358,7 +248,6 @@ The .Footer properites
     flex-direction: row;
     justify-content: center;
 }
-/*------------------------------------------*/
 .FooterNavListItem a {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -368,7 +257,6 @@ The .Footer properites
     margin: 8px 0;
     padding: 12px;
 }
-/*------------------------------------------*/
 .FooterNavListItem a:hover,
 .FooterNavListItem a:active {
   color: blue;
@@ -377,6 +265,7 @@ The .Footer properites
 .footer-break{
   display: none;
 }
+*/
 /* Footer END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

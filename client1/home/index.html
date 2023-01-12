@@ -8,7 +8,9 @@
         <title>Home</title>
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js">
 
+        </script>
         <!--BEGINNING OF STYLE SHEETS (CSS)-->
         <link rel="stylesheet"    href="css/01_iodd_logo.css">
         <link rel="stylesheet"    href="css/02_hamburger.css">
@@ -32,9 +34,9 @@
                     <input type="checkbox" class="Toggler">
                     <div class="Hamburger" style="background: rgb(198 210 222);"><div></div></div>
                     <div class="Menu">
-                    <div>
+                      <div>
                         <div>
-                        <ul class="MenuList">
+                          <ul class="MenuList">
                             <li class="MenuListItem"><a href="members/iodd-members.html">Members Listing</a></li>
                             <li class="MenuListItemLine"><hr color="blue"></li>
                             <li class="MenuListItem"><a href="../home/members-projects/members-projects.html">Project Listing</a></li>
@@ -43,19 +45,29 @@
                             <!--<li class="MenuListItemLine"><hr color="blue"></li>-->
                             <li class="MenuListItem"><a href="#">Support</a></li>
                             <li class="MenuListItem"><a href="#">License</a></li>
-                        </ul>
+                          </ul>
                         </div>
-                    </div>
+                      </div>
                     </div>
                 </div>
                 <div class="Logo">
+                    <div id="Btn1" style="position: absolute; width: 32px; height: 35px; top:20px;"></div>  <!-- .(30104.01.1 RAM Beg Add Hamburger Button) -->
+                      <object      style="margin-left:5px; margin-right:-20px;" class="Hamburger"
+                        type="image/svg+xml" data="assets/images/hamburger.svg?fill=blue"></object>         
+                      <script>
+                          $("#Btn1").on( "click", Btn1_onClick );        
+                           function Btn1_onClick(e) { 
+                              alert( "Clicked on the Hamburger Button")
+                              $("MenuWrap").show() // no workie 
+                              }                                            
+                      </script>                                                                             <!-- .(30104.01.1 RAM End) -->
                     <span class="LogoText">iodd</span>&nbsp;&nbsp;
                     <span class="device-text"></span>
                 </div>
                 <div class="HeaderSpacer"></div>
                 <div>
                     <ul  class="HeaderNavList">
-                        <li class="HeaderNavListItem2"><a href="#" target="_blank" title="Next Meeting">Meeting Location</a></li>
+                        <li class="HeaderNavListItem2"  ><a href="#" target="_blank" title="Next Meeting">Meeting Location</a></li>
                         <li class="HeaderNavListItemCTA"><a href="#" target="_blank" title="Next Meeting">Next Meeting <span class="next-meeting-date"></span></a></li>
                     </ul>
                 </div>

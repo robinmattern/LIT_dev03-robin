@@ -1,0 +1,121 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*MEDIA - IPAD LANDSCAPE*/
+@media only screen
+and (min-width: 950px)
+and (max-width: 1000px)
+{
+    .MenuWrap .Menu > div {
+        /*move menu around*/
+        justify-content: left; /*was center*/
+        padding-left: 300px; /*was deleted*/
+        margin-top: -400px; /*was deleted*/
+        /*end of move around*/
+        }
+    .MenuWrap .Menu > div > div > ul > li > a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: blue;
+        padding: 0px;
+        }
+    .MenuList {
+        border: blue 1px solid;
+        }
+    .MenuListItem {
+        margin: -35px;
+        }
+
+}  /* END MEDIA - IPAD LANDSCAPE */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*MEDIA - IPAD PORTRAIT*/
+@media only screen
+and (min-width: 741px)
+and (max-width: 949px) 
+{ 
+    .MenuWrap .Menu > div {
+        /*move menu around*/
+        justify-content: left; /*was center*/
+        padding-left: 300px; /*was deleted*/
+        margin-top: -400px; /*was deleted*/
+        /*end of move around*/
+        }
+    .MenuWrap .Menu > div > div > ul > li > a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: blue;
+        padding: 0px;
+        }
+    .MenuList {
+        border: blue 1px solid;
+        }
+    .MenuListItem {
+        margin: -35px;
+        }
+
+ } /* END MEDIA - IPAD PORTRAIT */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*MEDIA - IPHONE LANDSCAPE*/
+/*=========================================*/
+/*=========================================*/
+/* The Header/Logo/Navigation properites   */
+/*-----------------------------------------*/  
+@media only screen
+and (min-width: 440px)
+and (max-width: 740px) 
+{ 
+    .MenuWrap .Menu > div {
+        /*move menu around*/
+        justify-content: left; /*was center*/
+        padding-left: 220px; /*was deleted*/
+/*      margin-top: -50px; *//*was deleted*/  /* Downloaded on 11/7 */  
+        margin-top: 120px;   /*was deleted*/  /* Downloaded on 11/6 */  
+        /*end of move around*/
+        }
+    .MenuWrap .Menu > div > div > ul > li > a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: blue;
+        padding: 0px;
+        }
+    .MenuList {
+        border: blue 1px solid;
+        }
+    .MenuListItem {
+        margin: -35px;
+        }
+} /* MEDIA - IPHONE LANDSCAPE */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*MEDIA - IPHONE PORTRAIT*/
+@media only screen
+and (max-width: 440px)
+{
+    .MenuWrap .Menu > div {
+        /*move menu around*/
+        justify-content: left; /*was center*/
+        padding-left: 120px; /*was deleted*/
+        margin-top: -20px; /*was deleted*/
+        /*end of move around*/
+    }
+    .MenuWrap .Menu > div > div > ul > li > a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: blue;
+        padding: 0px;
+    }
+    .MenuList {
+        border: blue 1px solid;
+    }
+    .MenuListItem {
+        margin: -35px;
+    } /*--*/          
+
+} /* MEDIA - IPHONE PORTRAIT */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
